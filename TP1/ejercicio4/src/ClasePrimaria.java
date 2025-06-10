@@ -11,6 +11,10 @@ public class ClasePrimaria {
 		
 		System.out.print("Ingrese un numero mayor a 1 por favor: > ");
 		int N = sc.nextInt();
+		while(N <= 1) {
+			System.out.print("\nError, numero no valido.\nIngrese de nuevo: > ");
+			N = sc.nextInt();
+		}
 		sc.close();
 		
 		int par=0;
@@ -20,7 +24,7 @@ public class ClasePrimaria {
 		System.out.println("\n\nNumeros Pares:");
 		
 		for(i=2; i < N; i+=2) {
-			System.out.println(i);
+			System.out.print(i + "; ");
 			par += i;
 		}
 		
@@ -29,7 +33,7 @@ public class ClasePrimaria {
 		System.out.println("\nNumeros Impares:");
 
 		for(i=1; i < N; i+=2) {
-			System.out.println(i);
+			System.out.print(i + "; ");
 			impar += i;
 		}
 		

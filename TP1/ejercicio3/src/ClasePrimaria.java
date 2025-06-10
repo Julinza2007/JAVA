@@ -1,18 +1,18 @@
 /*3. Pedir números por pantalla hasta que alguno sea mayor a 100 y además sea un numero primo*/
 
-import java.util.Scanner;
+import java.util.Scanner; // Se importa desde las herramientas de java el Scanner
 
 public class ClasePrimaria {
 
 	public static void main(String[] args) {
 		boolean esPrimo;
 		int num;
-		Scanner sc = new Scanner(System.in); // Crea el sc, que es el scanner.
+		Scanner sc = new Scanner(System.in); // Crea el sc, que es el Scanner.
 		
 		do {
 			esPrimo = true;
 			System.out.print("Ingrese un numero: > ");
-			 num = sc.nextInt(); // Le dice al scanner que lea enteros.
+			 num = sc.nextInt(); // Le dice al Scanner que lea enteros.
 			
 			for(int i = 2; i <= num / 2; i++){
 				if(num % i == 0){

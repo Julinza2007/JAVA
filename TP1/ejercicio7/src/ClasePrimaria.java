@@ -14,8 +14,8 @@ public class ClasePrimaria {
 		
 		System.out.print("Ingrese una cadena de texto para calcular la cantidad de vocales y consonantes: ");		
 		string = sc.nextLine();
-		String cadena = string;
-		string = string.toLowerCase();
+		String cadena = string; // Guardo variable con la entrada original que el usuario ingresó.
+		string = string.toLowerCase(); // Cadena de caracteres se forza a ser toda en minuscula para trabajar comodo mas adelante.
 		
 		int contVocales = 0;
 		int contConsonantes = 0;
@@ -23,13 +23,13 @@ public class ClasePrimaria {
 		
 		for(int i=0; i < N; i++) {
 			
-			if(string.charAt(i) >= 'a' && string.charAt(i) <= 'z') {
+			if(string.charAt(i) >= 'a' && string.charAt(i) <= 'z') { // Deben ser letras.
 			
 				if(string.charAt(i) == 'a' || string.charAt(i) == 'e' || string.charAt(i) == 'i' || string.charAt(i) == 'o' || string.charAt(i) == 'u') {
-					contVocales++;
+					contVocales++; // Se cuentan vocales.
 				}
 				else{
-					contConsonantes++;
+					contConsonantes++; // Sino son consonantes.
 				}
 				
 			}

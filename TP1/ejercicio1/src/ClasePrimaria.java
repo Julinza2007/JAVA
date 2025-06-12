@@ -2,12 +2,12 @@
 si el número es par, escribir par sino escribir el mismo número */
 
 
-public class ClasePrimaria {
+public class ClasePrimaria { // Clase primaria.
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { // Main
 		for(int i=1; i <= 100; i++) {
-			if(i % 2 == 0){ // Condicion de que el resto dividido es cero
-				System.out.println("Es par");
+			if(i % 2 == 0){ // Condicion de que el resto dividido por 2 es cero, definicion de numero par.
+				System.out.println("Es par"); 
 			}
 			else{
 				System.out.println(i);

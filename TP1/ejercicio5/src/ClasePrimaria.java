@@ -18,20 +18,20 @@ public class ClasePrimaria {
 				n = sc.nextInt();
 			}
 				
-			for(int i= 1; i <= 10; i++) {
+			for(int i= 1; i <= 10; i++) { // Se genera la tabla de multiplicar.
 				System.out.println(n + "x" + i + "=" + i*n);
 			}
 			
 			System.out.println("\nSi desea seguir generando tablas con otros numeros ingrese 1, sino ingrese 0 para terminar con el programa.");
 			System.out.print("> ");
 			opc = sc.nextInt();
-			while(opc != 0 && opc != 1) {
+			while(opc != 0 && opc != 1) { // Validacion de si el usuario quiere continuar o no el programa.
 				System.out.println("Error, ingrese de nuevo opcion:");
 				System.out.print("> ");
 				opc = sc.nextInt();
 			}
 			
-			if(opc == 0) {
+			if(opc == 0) { // Mostrar mensaje de terminación del programa en caso de que el usuario ingrese 0.
 				System.out.println("\nPrograma terminado...");
 			}
 			

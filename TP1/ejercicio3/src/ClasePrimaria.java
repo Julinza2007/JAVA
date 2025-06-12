@@ -1,6 +1,6 @@
 /*3. Pedir números por pantalla hasta que alguno sea mayor a 100 y además sea un numero primo*/
 
-import java.util.Scanner; // Se importa desde las herramientas de java el Scanner
+import java.util.Scanner; // Se importa desde las herramientas de java el Scanner para lectura.
 
 public class ClasePrimaria {
 
@@ -17,7 +17,7 @@ public class ClasePrimaria {
 			for(int i = 2; i <= num / 2; i++){
 				if(num % i == 0){
 					esPrimo = false;
-					break;
+					break; // Si el numero no es primo se sale del bucle.
 				}
 			}
 			
@@ -40,6 +40,6 @@ public class ClasePrimaria {
 			
 			
 		}while(num <= 100 || !esPrimo); // Si alguna de estas condiciones (que son falsas) se dan, se vuelve a pedir un numero.
-		sc.close();
+		sc.close(); // Se cierra el Scanner.
 	}
 }

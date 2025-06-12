@@ -4,24 +4,24 @@ que adivine el número. Dale pistas como "El número es mayor" o "El número es 
 hasta que adivine correctamente. Cuenta cuántos intentos le tomó.
 */
 
-import java.util.Random;
+import java.util.Random; // Se importa desde las herramientas de java el Random para generar numeros aleatorios.
 import java.util.Scanner;
 
 public class ClasePrimaria {
 	
 	
 	public static void main(String[] args) {
-		Random random = new Random();
+		Random random = new Random(); // Crea el random, que es el Random importado.
 		int numRandom = random.nextInt(100) + 1;
 		int numero = 0;
 		int intentos = 0;
 		Scanner sc = new Scanner(System.in);
 				
 		do{
-			numero = ingresarNum(numero, sc);
-			intentos++;
+			numero = ingresarNum(numero, sc); // Funcion para ingresar numeros.
+			intentos++; // Se gasta un intento y se imprime en pantalla.
 			System.out.println("Cantidad de intentos: " + intentos);
-		}while(compararRandom(numero, numRandom));
+		}while(compararRandom(numero, numRandom)); // Hasta que el usuario no adivine el numero no termina.
 		
 		sc.close();
 		
@@ -32,7 +32,7 @@ public class ClasePrimaria {
 		System.out.print("\nIngrese un numero entre el 1 y 100 para intentar adivinar\nun numero aleatorio (inclusive): ");
 
 		n = sc.nextInt();
-		while(n < 1 || n > 100) {
+		while(n < 1 || n > 100) { // Validacion de numero.
 			System.out.println("\n\nError, recuerde valores entre 1 y 100 inclusive.");
 			System.out.print("Ingrese nuevamente: ");
 			n = sc.nextInt();
